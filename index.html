@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Feud Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Family Feud Game</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Family Feud</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <section class="game-intro">
+        <h2>Welcome to Family Feud!</h2>
+        <p>Family Feud is an American television show game
+        created by Mark Goodson. Two Families compete on each episode
+        to name the most popular answers to survey questions in order to win cash and prizes. </p>
+    </section>
+
+    <div id="game-container">
+        <h2>Game Setup</h2>
+        <ul>
+            <li> answer Placeholder</li>
+            <li> answer Placeholder</li>
+            <li> answer Placeholder</li>
+            <li> answer Placeholder</li>
+        </ul>
+
+        <input form id="answer-form" method="POST">
+
+        <table class="score-table">
+            <tr>
+                <th scope="col">Team Name</th>
+                <th scope="col">Team Score</th>
+            </tr>
+
+            <tr>
+                <th scope="row">Team 1</th>
+                <td>69</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Team 2</th>
+                <td>96</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <h3>Game Over!</h3>
+    </footer>
+    <button>Start Game</button>
+
+    <div id="results">
+        <audio controls>
+            <source src="Chumbucket Rhumba.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <nav>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Rules</a></li>
+        <li><a href="#">Leaderboard</a></li>
+    </nav>
+
+    <div class="team-controls">
+        <button id="passButton">Pass</button>
+        <button id="playButton">Play</button>
+    </div>
+
+    <form>
+        <label for="name">Player Name</label>
+        <input type="text" id="name" name="name" required>
+    </form>
+    <img src="buzzer.png">
+    
+    <div id="hiddendiv" class="hidden">
+        <progress id="progressBar" value="0" max="100"></progress>
+    </div>
+
+    <section>
+        <h2>Game Rules</h2>
+        <article>
+            <h3>objectives</h3>
+            <p>The objectives of this game is to collect score by completing tasks</p>
+        </article>
+    </section>
+
+    <aside>
+        <h2>Tips & Tricks</h2>
+        <ul>
+            <li>Always Keep an eye on your health bar</li>
+            <li>Think your answers wisely</li>
+            <li>Enjoy the game</li>
+        </ul>
+    </aside>
+</body>
+</html>
